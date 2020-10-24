@@ -47,4 +47,11 @@ public:
 	}
 
 	uint8_t insADD(Register* targetReg);
+	uint16_t insADDHL(CombinedRegister* targetReg);
+	uint8_t insADC(Register* targetReg);
+	uint8_t insSUB(Register* targetReg);
+	uint8_t insSBC(Register* targetReg);
+	uint8_t insAND(Register* targetReg);
+	uint8_t insOR(Register* targetReg);
+	uint8_t insXOR(Register* targetReg);
 };
