@@ -24,12 +24,12 @@ bool Tests::testInstructions()
 	if (!testADD()) return false;
 	if (!testADDHL()) return false;
 	if (!testADC()) return false;
-	if (testSUB()) return false;
-	if (testSBC()) return false;
-	if (testAND()) return false;
-	if (testOR()) return false;
-	if (testXOR()) return false;
-	if (testCP()) return false;
+	if (!testSUB()) return false;
+	if (!testSBC()) return false;
+	if (!testAND()) return false;
+	if (!testOR()) return false;
+	if (!testXOR()) return false;
+	if (!testCP()) return false;
 
 
 	return true;
@@ -147,11 +147,11 @@ bool Tests::testSBC()
 	if (testCPU->a.getValue() != 239ui8) return false;
 	if (!CHECK_FLAGS(testCPU->f.get8BitValue(), (FLAG_SUBTRACT | FLAG_HALF_CARRY))) return false; //Half Carry Should Be 1 Now
 
-	testCPU->d.setValue(494ui8); //Gets us to 0, wrapped back to 255, then back to 0, so the zero and carry flags are true
+	testCPU->d.setValue(238ui8); //Gets us to 0, wrapped back to 255, then back to 0, so the zero and carry flags are true
 	testCPU->f.setFlagCarry(true);
 	testCPU->insSBC(testCPU->d);
 	if (testCPU->a.getValue() != 0ui8) return false;
-	if (!CHECK_FLAGS(testCPU->f.get8BitValue(), (FLAG_ZERO | FLAG_SUBTRACT | FLAG_CARRY))) return false; //Zero + Carry Flags Should Be 1 Now
+	if (!CHECK_FLAGS(testCPU->f.get8BitValue(), (FLAG_ZERO | FLAG_SUBTRACT))) return false; //Zero + Carry Flags Should Be 1 Now
 
 	return true;
 }

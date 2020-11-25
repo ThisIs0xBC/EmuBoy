@@ -110,13 +110,14 @@ uint8_t CPU::insSBC(Register targetReg) {
 	// The halfCarry flag gets set if adding the lower nibbles of the target register's 
 	// value and register A together result in a value smaller than 0x1F. If the result is
 	// smaller than 0x1F then the subtraction caused a carry from the upper nibble to the lower nibble.
-	this->f.setFlagHalfCarry((aVal >> 4) + (targetVal & 0xF) > 0xF); //TODO: FIX THIS
+	this->f.setFlagHalfCarry((aVal >> 4) & (result >> 4) < 0xF);
 	// If operation results in an arithmetic overflow, set the flag. We could also just do if (result < aVal) (default C++ uint behaviour is to wrap when overflowed) here but I prefer this method for now
 	this->f.setFlagCarry(aVal < targetVal);
 
 	this->a.setValue(result);
 
 	return result;
+
 
 }
 
