@@ -19,6 +19,12 @@
     <Filter Include="Header Files\CPU">
       <UniqueIdentifier>{5a06324e-3853-4799-a2b3-d416c84e8963}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\tests">
+      <UniqueIdentifier>{caad0720-e857-4b38-b173-523eea363efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests">
+      <UniqueIdentifier>{0d767842-46d3-42fe-aefc-92d311e63ec0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EmuBoy.cpp">
@@ -30,6 +36,9 @@
     <ClCompile Include="CPURegister.cpp">
       <Filter>Source Files\CPU</Filter>
     </ClCompile>
+    <ClCompile Include="tests.cpp">
+      <Filter>Source Files\tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPU.h">
@@ -37,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="CPURegister.h">
       <Filter>Header Files\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="tests.h">
+      <Filter>Header Files\tests</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

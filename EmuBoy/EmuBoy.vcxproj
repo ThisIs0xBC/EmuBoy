@@ -142,10 +142,12 @@
     <ClCompile Include="CPU.cpp" />
     <ClCompile Include="CPURegister.cpp" />
     <ClCompile Include="EmuBoy.cpp" />
+    <ClCompile Include="tests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CPU.h" />
     <ClInclude Include="CPURegister.h" />
+    <ClInclude Include="tests.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
