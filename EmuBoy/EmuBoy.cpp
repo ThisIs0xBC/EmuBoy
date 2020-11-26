@@ -64,7 +64,7 @@ int main()
     gbCPU->a.setValue(0ui8);
     std::cout << "Current Accumulator Value In Binary: 00000000 (" << (uint16_t)gbCPU->a.getValue() << ")" << std::endl;
     gbCPU->f.setFlagCarry(false);
-    std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+    std::cout << "FLAG_CARRY Is false (0)" << std::endl;
     std::cout << "Calling RRA Instruction" << std::endl;
     gbCPU->insRRA();
     std::cout << "Current Accumulator Value In Binary: ";
@@ -79,7 +79,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -87,7 +87,7 @@ int main()
     gbCPU->a.setValue(255ui8);
     std::cout << "Current Accumulator Value In Binary: 11111111 (" << (uint16_t)gbCPU->a.getValue() << ")" << std::endl;
     gbCPU->f.setFlagCarry(false);
-    std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+    std::cout << "FLAG_CARRY Is false (0)" << std::endl;
     std::cout << "Calling RRA Instruction" << std::endl;
     gbCPU->insRRA();
     std::cout << "Current Accumulator Value In Binary: ";
@@ -102,7 +102,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -125,7 +125,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -148,7 +148,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -156,7 +156,7 @@ int main()
     gbCPU->a.setValue(85ui8);
     std::cout << "Current Accumulator Value In Binary: 01010101 (" << (uint16_t)gbCPU->a.getValue() << ")" << std::endl;
     gbCPU->f.setFlagCarry(false);
-    std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+    std::cout << "FLAG_CARRY Is false (0)" << std::endl;
     std::cout << "Calling RRA Instruction" << std::endl;
     gbCPU->insRRA();
     std::cout << "Current Accumulator Value In Binary: ";
@@ -171,7 +171,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << "\n\nROTATE LEFT\n\n" << std::endl;
 
@@ -182,7 +182,7 @@ int main()
     gbCPU->a.setValue(0ui8);
     std::cout << "Current Accumulator Value In Binary: 00000000 (" << (uint16_t)gbCPU->a.getValue() << ")" << std::endl;
     gbCPU->f.setFlagCarry(false);
-    std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+    std::cout << "FLAG_CARRY Is false (0)" << std::endl;
     std::cout << "Calling RRA Instruction" << std::endl;
     gbCPU->insRLA();
     std::cout << "Current Accumulator Value In Binary: ";
@@ -197,7 +197,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -205,7 +205,7 @@ int main()
     gbCPU->a.setValue(255ui8);
     std::cout << "Current Accumulator Value In Binary: 11111111 (" << (uint16_t)gbCPU->a.getValue() << ")" << std::endl;
     gbCPU->f.setFlagCarry(false);
-    std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+    std::cout << "FLAG_CARRY Is false (0)" << std::endl;
     std::cout << "Calling RRA Instruction" << std::endl;
     gbCPU->insRLA();
     std::cout << "Current Accumulator Value In Binary: ";
@@ -220,7 +220,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -228,7 +228,7 @@ int main()
     gbCPU->a.setValue(15ui8);
     std::cout << "Current Accumulator Value In Binary: 00001111 (" << (uint16_t)gbCPU->a.getValue() << ")" << std::endl;
     gbCPU->f.setFlagCarry(false);
-    std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+    std::cout << "FLAG_CARRY Is false (0)" << std::endl;
     std::cout << "Calling RRA Instruction" << std::endl;
     gbCPU->insRLA();
     std::cout << "Current Accumulator Value In Binary: ";
@@ -243,7 +243,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -266,7 +266,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;
 
@@ -289,7 +289,7 @@ int main()
     if (gbCPU->f.getFlagCarry())
         std::cout << "FLAG_CARRY Is True (1)" << std::endl;
     else
-        std::cout << "FLAG_CARRY Is False (0)" << std::endl;
+        std::cout << "FLAG_CARRY Is false (0)" << std::endl;
 
     std::cout << std::endl;*/
 

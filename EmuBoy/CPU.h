@@ -60,7 +60,7 @@ public:
 	uint8_t insRLCA();
 	uint8_t insCPL();
 	bool insBIT(uint8_t bit, Register targetReg); //Actually uint3 but uint8 works too
-	void insRESET(uint8_t bit, Register targetReg); //Actually uint3 but uint8 works too
+	void insRES(uint8_t bit, Register targetReg); //Actually uint3 but uint8 works too
 	void insSET(uint8_t bit, Register targetReg); //Actually uint3 but uint8 works too
 	uint8_t insSRL(Register targetReg);
 	uint8_t insRR(Register targetReg);
